@@ -1,0 +1,26 @@
+class Solution{
+     public String reverseVowels(String s){
+     char[] chars = s.CharArrays();
+     int first = 0;
+     int last = s.length()-1;
+     
+    while(first < last){
+          if(first < last && !isVowels( chars[first]){
+            first++;
+            }
+       }
+    while(first < last){
+         if(first < last && !isVowels(chars[last]){
+            last--;
+            }
+       }
+       if(first < last){
+           char temp = chars[first];
+           chars [first++] = chars[last];
+           chars[last--] = temp;
+           }
+           return new String(chars);
+    private boolean isVowels(char s){
+       return c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u'
+                || c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U';
+            }
